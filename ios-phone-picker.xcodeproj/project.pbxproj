@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		648152211FD6E4E800AF86E0 /* ios_phone_picker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6481521F1FD6E4E800AF86E0 /* ios_phone_picker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		648152291FD6E51100AF86E0 /* EKOCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648152271FD6E51100AF86E0 /* EKOCountryPicker.swift */; };
+		6481522A1FD6E51100AF86E0 /* EKONumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648152281FD6E51100AF86E0 /* EKONumberPicker.swift */; };
+		6481522C1FD6E53300AF86E0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6481522B1FD6E53300AF86E0 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6481521C1FD6E4E800AF86E0 /* ios_phone_picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ios_phone_picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6481521F1FD6E4E800AF86E0 /* ios_phone_picker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_phone_picker.h; sourceTree = "<group>"; };
 		648152201FD6E4E800AF86E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648152271FD6E51100AF86E0 /* EKOCountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKOCountryPicker.swift; sourceTree = "<group>"; };
+		648152281FD6E51100AF86E0 /* EKONumberPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKONumberPicker.swift; sourceTree = "<group>"; };
+		6481522B1FD6E53300AF86E0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		6481521E1FD6E4E800AF86E0 /* ios-phone-picker */ = {
 			isa = PBXGroup;
 			children = (
+				648152271FD6E51100AF86E0 /* EKOCountryPicker.swift */,
+				648152281FD6E51100AF86E0 /* EKONumberPicker.swift */,
+				6481522B1FD6E53300AF86E0 /* Extensions.swift */,
 				6481521F1FD6E4E800AF86E0 /* ios_phone_picker.h */,
 				648152201FD6E4E800AF86E0 /* Info.plist */,
 			);
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					6481521B1FD6E4E800AF86E0 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6481522A1FD6E51100AF86E0 /* EKONumberPicker.swift in Sources */,
+				6481522C1FD6E53300AF86E0 /* Extensions.swift in Sources */,
+				648152291FD6E51100AF86E0 /* EKOCountryPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,7 @@
 		648152251FD6E4E800AF86E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ino.ios-phone-picker";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +289,7 @@
 		648152261FD6E4E800AF86E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
